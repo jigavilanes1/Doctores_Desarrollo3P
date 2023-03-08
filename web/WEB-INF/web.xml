@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>DoctorController</servlet-name>
+        <servlet-class>controller.DoctorController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EspecialidadController</servlet-name>
+        <servlet-class>controller.EspecialidadController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HospitalController</servlet-name>
+        <servlet-class>controller.HospitalController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoctorController</servlet-name>
+        <url-pattern>/DoctorController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EspecialidadController</servlet-name>
+        <url-pattern>/EspecialidadController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HospitalController</servlet-name>
+        <url-pattern>/HospitalController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
