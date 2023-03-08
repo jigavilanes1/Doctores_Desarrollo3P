@@ -10,9 +10,9 @@ import java.sql.SQLException;
 
 public class Conexion {
     Connection conn;
-    String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+    String url = "jdbc:oracle:thin:@localhost:1521:xe";
     String user = "System";
-    String pass = "Espe.2025";
+    String pass = "12345";
     
     public Connection Conectar() throws ClassNotFoundException{
         try{
